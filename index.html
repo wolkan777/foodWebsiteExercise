@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7eccda25eb.js" crossorigin="anonymous"></script>
     <title>Shitty</title>
 </head>
 
@@ -20,11 +21,11 @@
             </ul>
         </header>
         <div class="content">
-            <div class="bannerText">
-                <div>
-                    <h2>EAT Shitty<br>
-                        Stay Shitty </h2>
-                    <p>
+            <div class="bannerText" id="slideShowText">
+                <div class="active">
+                    <h2>EAT Veggie<br>
+                        Stay Veggie </h2>
+                    <p style="text-align: justify;">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                         deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                         provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
@@ -32,14 +33,50 @@
                     </p>
                     <a href="#">Read More</a>
                 </div>
+                <div>
+                    <h2>EAT Pizza<br>
+                        Smells Like Pizza </h2>
+                    <p>
+                        Atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias similique sunt in culpa qui officia
+                        deserunt mollitia animi, id est laborum et
+                        dolorum fuga.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>EAT Some Candy<br>
+                        Shit Like Candy </h2>
+                    <p>
+                        Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fuga.iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="bannerImg">
-                <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg" alt="">
-
+            <div class="bannerImg" id="slideShow">
+                <img src="image-1.jpg" class="active" >
+                <img src="image-2.jpg" >
+                <img src="image-3.jpg">
             </div>
         </div>
+        <div class="icons">
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <ul class="controls">
+                <li><a href="#"><i id="left" class="fas fa-chevron-circle-left"></i></a></li>
+                <li><a href="#"><i id="right" class="fas fa-chevron-circle-right"></i></a></li>
+            </ul>
+        </div>
     </div>
-
+   <script src="main.js"></script>
 </body>
 
 </html>
