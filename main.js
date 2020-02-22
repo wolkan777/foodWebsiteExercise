@@ -38,3 +38,8 @@ function prevSlideText() {
     slideTexts[i].classList.add('active');
 }
 
+
+function menuToggle() {
+    let nav = document.getElementById('navbar');
+    nav.classList.toggle('active');
+}

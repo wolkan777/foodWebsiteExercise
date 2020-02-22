@@ -52,7 +52,7 @@ header .logo{
 }
 
 header .logo span{
-    color:#78ff00
+    color:#af7b8c
 }
 
 header ul{
@@ -87,7 +87,7 @@ header ul li a:before{
     left: 0;
     width: 0;
     height: 100%;
-    background: #78ff00;
+    background: #af7b8c;
     z-index: -1;
     transition: 0.5s ease-in-out;
 }
@@ -156,7 +156,7 @@ header ul li a.active:before
     left: 0;
     width: 60px;
     height: 100%;
-    background: #78ff00;
+    background: #af7b8c;
     z-index: -1;
     transition: 0.5s ease-in-out;
 }
@@ -236,4 +236,107 @@ header ul li a.active:before
 
 .icons .controls li:hover{
     opacity: 0.5;
+}
+
+.menuIcon{
+    display: none;
+}
+
+@media(max-width:992px){
+
+    .container{
+        padding: 20px 50px;
+
+    }
+
+    .container:before{
+        display: none;
+    }
+
+    header{
+        padding: 0;
+    }
+    .icons .controls li {
+        filter: invert(0);
+    }
+
+    .content .bannerText h2{
+        font-size: 30px;
+    }
+
+    .content{
+        margin-top:0 ;
+        flex-direction: column-reverse;
+    }
+
+    .content .bannerImg{
+        width: 100%;
+        height: 40vh;
+        margin: 20px 0;
+        
+    }
+
+    .content .bannerText{
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    header ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff ;
+        z-index: 10000;
+        padding: 100px 0;
+    }
+
+    header.active ul{
+        display: initial;
+    }
+
+    header ul li{
+        padding: 20px;
+        text-align: center;
+    }
+
+    header ul li a{
+        color: black !important;
+        font-size: 36px;
+    }
+
+    header ul li a:hover:before,
+    header ul li a.active:before{
+        width: 100%;
+    }
+
+    .menuIcon{
+        display: initial;
+        position: fixed;
+        right: 50px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 10000;
+        background: #fff url(menuIcon.png);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+    }
+
+    header.active .menuIcon{
+        background: #fff url(closeIcon.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:767){
+    .container{
+        padding: 20px 30px;
+    }
+    .menuIcon{
+        right: 30px;
+    }
+
 }
